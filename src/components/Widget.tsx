@@ -84,7 +84,7 @@ const Widget = () => {
 
     return (
 
-        <div className="flex items-center justify-center min-h-screen -mt-20 lg:-mt-14 w-full lg:w-[450px] mx-auto">
+        <div className="flex items-center justify-center min-h-screen  w-full lg:w-[450px] mx-auto">
             {loading ? <Loader /> :
                 <div className="bg-white shadow-xl rounded-2xl p-6 w-full max-w-xs">
                     <div className='flex items-center justify-between mb-4'>
@@ -94,33 +94,33 @@ const Widget = () => {
                 </div> */}
                     </div>
                     <div className="mb-4">
-                        <p className="text-gray-600">Current Bitcoin Price (USD):</p>
-                        <p className="text-2xl font-semibold text-gray-800">
+                        <p className="text-[#575D5E] text-[12px] lg:text-[14px] font-[400]">Current Bitcoin Price (USD)</p>
+                        <p className="text-[#575D5E] text-[14px]  lg:text-[16px] font-[600]">
                             {btcPrice ? `${FormatCurrency(btcPrice)}` : '--'}
                         </p>
                     </div>
 
-                    <div className="mb-4">
-                        <p className="text-gray-600">Last Updated:</p>
-                        <p className="text-gray-800">{lastUpdated}</p>
+                    <div className="mb-4 flex items-center text-[#A5ABA7] text-[13px] font-[400]">
+                        <p className="">Last Updated:</p>
+                        <p className="ml-2">{lastUpdated}</p>
                     </div>
 
                     <div className="mb-4">
-                        <label className="block text-gray-600 mb-2">Enter USD:</label>
+                        <label className="text-[#575D5E] text-[12px] lg:text-[14px] font-[400]">Enter amount</label>
                         <input
                             type="number"
                             value={usdAmount}
                             onChange={handleUsdChange}
                             max="100000000"
                             min="0"
-                            className="w-full p-2 border border-gray-300 rounded-lg outline-none focus:border-2 focus:border-[black]"
+                            className="w-full p-2 border border-[#E8EDEE] rounded-xl outline-none text-[15px] "
                             placeholder="Enter amount in USD"
                         />
                     </div>
 
                     <div>
-                        <p className="text-gray-600">Converted BTC:</p>
-                        <p className="text-2xl font-semibold text-gray-800">{btcAmount}</p>
+                        <p className="text-[#575D5E] text-[12px] lg:text-[14px] font-[400]">Equivalent BTC</p>
+                        <p className="text-[#575D5E] text-[14px] font-[600]">{btcAmount}</p>
                     </div>
                 </div>}
         </div>

@@ -8,8 +8,8 @@ const App = () => {
 
   return (
     <div>
-      <div className='px-10 pt-5'>      <Logo size="md" />
-</div>
+      {/* <div className='px-10 pt-5'>      <Logo size="md" />
+</div> */}
       <Widget />
     </div>
   );
