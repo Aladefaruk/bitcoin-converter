@@ -60,9 +60,10 @@ This is a simple Bitcoin price converter widget built using React, TypeScript, a
 ├── src
 │   ├── assets           # Images and logos used
 │   ├── components       # Reusable UI components
-│   ├── App.tsx          # Main component where the Bitcoin converter is implemented
-│   ├── Loader.tsx       # Loader with the pulsating Bitcoin icon
-│   ├── Logo.tsx         # Logo component with size variants
+        |--  Logo.tsx    # Logo component with size variants
+        |-- Widget.tsx   # Widget component where the Bitcoin converter is implemented 
+        |-- Loader.tsx   # Loader with the pulsating Bitcoin icon
+│   ├── App.tsx          # App component that houses all other components       
 │   └── index.tsx        # Entry point of the app
 ├── public               # Static files
 ├── package.json         # Project dependencies and scripts
